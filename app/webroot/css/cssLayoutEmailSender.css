@@ -1,0 +1,167 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+    
+#main_content_container{
+      width: 800px;
+      border: 1px solid gray;
+      margin: 0 auto;
+
+
+}
+
+
+#header{
+          text-align: center;
+}
+#header h1{
+    background:	#367889;
+    padding: 10px;
+    color: #FFF;
+       
+}
+
+#main_body_container{
+    background: #FFF7D6;
+    margin-bottom: 2px;    
+    margin-top: 2px;    
+    margin-right: 110px;
+    margin-left: 110px;
+    
+    padding: 3px;
+    alignment-adjust: center;
+    font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
+    min-height:500px;
+    position: relative;
+
+    
+    
+    
+}
+
+#leftnav{
+    width: 97px;
+    background: #dfdfdf;
+    padding: 3px;
+    float: left;
+    margin-top: 3px;
+    }
+
+#rightnav{
+    width: 97px;
+    background: #367889;
+    padding: 3px;
+    float: right;
+    margin-top: 3px;
+}
+
+
+#rodape{
+    background:	#555;
+    padding: 5px;
+    text-align: center;
+    color: #FFF;       
+    
+}
+
+#tipo_container{
+    float: left;
+    background: #FF4D4D;
+    margin:1px;
+    width: 49%;
+    height: 100px;
+ }
+
+ #produto_container{
+    float: left;
+    background: #FFCCCC;
+    margin:1px;
+    width: 49%;
+    height: 100px;
+ }
+ 
+ //peguei emprestado do CSS padrão do cake
+ //preciso editar e retirar o que não usa
+ 
+ /** Forms **/
+form {
+	//clear: both;
+	//margin-right: 20px;
+	//padding: 0;
+	width: 95%;
+}
+fieldset {
+	border: none;
+	//margin-bottom: 1em;
+	//padding: 16px 10px;
+}
+fieldset legend {
+	color: #e32;
+	font-size: 160%;
+	font-weight: bold;
+}
+fieldset fieldset {
+	margin-top: 0;
+	padding: 10px 0 0;
+}
+fieldset fieldset legend {
+	font-size: 120%;
+	font-weight: normal;
+}
+fieldset fieldset div {
+	clear: left;
+	margin: 0 20px;
+}
+form div {
+	//clear: both;
+	margin-bottom: 1em;
+	padding: .5em;
+	//vertical-align: text-top;
+}
+form .input {
+	color: #444;
+}
+form .required {
+	font-weight: bold;
+}
+form .required label:after {
+	color: #e32;
+	content: '*';
+	display:inline;
+}
+form div.submit {
+	border: 0;
+	clear: both;
+	margin-top: 10px;
+}
+label {
+	display: block;
+	font-size: 110%;
+	margin-bottom:3px;
+}
+input, textarea {
+	//clear: both;
+	font-size: 140%;
+	font-family: "frutiger linotype", "lucida grande", "verdana", sans-serif;
+	padding: 1%;
+	width:98%;
+}
+
+
+input[type=submit] {
+	display: inline;
+	font-size: 110%;
+	width: auto;
+}
+form .submit input[type=submit] {
+	background:#FF9900;
+	border-color: #2d6324;
+	color: #fff;
+	text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0px;
+	padding: 8px 10px;
+}
+form .submit input[type=submit]:hover {
+	background: #FF0000;
+}
