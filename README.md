@@ -24,6 +24,6 @@ servidor smtp (testei apenas o Gmail até o presente momento)
 
 3 - No arquivo App/Controller/MessagesController.php configure destinatário e anexos
 
-4 - Abra no navegador na pagina http://localhost/EmailSender/Pessoas/exibe e envie um email de teste
+4 - Abra no navegador na pagina http://localhost/EmailSender e teste
 
 5 - Sucesso ;)

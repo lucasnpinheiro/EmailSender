@@ -6199,3 +6199,32 @@ Stack Trace:
 #1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PedidosController), Object(CakeRequest))
 #2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-08-07 16:26:41 Error: [MissingTableException] Table posts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'posts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Request URL: /EmailSender/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Model\Model.php(3501): Model->setSource('posts')
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Model\Model.php(2905): Model->getDataSource()
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Model\Model.php(2877): Model->_readDataSource('all', Array)
+#3 C:\VertrigoServ\www\EmailSender\app\Controller\PostsController.php(25): Model->find('all')
+#4 [internal function]: PostsController->index()
+#5 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#6 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#8 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-08-07 16:29:24 Error: [MissingActionException] Action PedidosController::exibe() could not be found.
+Exception Attributes: array (
+  'controller' => 'PedidosController',
+  'action' => 'exibe',
+)
+Request URL: /EmailSender/pedidos/exibe
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PedidosController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
