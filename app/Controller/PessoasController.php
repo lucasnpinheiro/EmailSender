@@ -7,14 +7,45 @@ class PessoasController extends AppController{
   
        //funções de uso interno    
        
-    //lista todas as pessoas registradas
-    function lista(){
-        return $this->Pessoa->lists();
+    //retorna 1 especifica
+    function listapessoa($pid=null){
+        
+        if($pid!=null){            
+            return $this->Pessoa->buscapessoa($pid);   
+        }
+        
+        return null;
+        
     }
+    
+    //retorna todos os registros
+     function listatudo(){
+                  
+       return $this->Pessoa->lists();   
+                            
+        
+    }
+    
+    
+    //"fatia" a lista de pessoas em varias partes
+    //retorna uma parte da lista de pessoas cadastradas
+    //o tamanho da lista retornada depende do divisor recebido
+    function listarepartido($inicio=0,$divisor=1){//começa a partir do indice 0
+        
+        
+       $regs=$this->Pessoa->lists();        
+       return  array_slice($regs, $inicio,$divisor); 
+                                   
+        
+    }
+    
+    
     
     function contaRegs(){
         return $this->Pessoa->conta();
     }
+    
+    
     
     
     
@@ -29,12 +60,13 @@ class PessoasController extends AppController{
         $this->set('totalPessoas',$result);
     }
         
-        
+    //function exibepessoa que exibe os dados de 1 pessoa especifica    
+    
     function exibe(){
-        $result=$this->lista();        
+        $result=$this->listatudo();        
         $this->set('pessoas',$result);
     }
  
-    //function exibepessoa que exibe os dados de 1 pessoa especifica
+ 
 }
 

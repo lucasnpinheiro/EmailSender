@@ -5486,3 +5486,716 @@ Stack Trace:
 #4 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
 #5 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2014-07-18 17:57:44 Error: [SocketException] SMTP Error: 535 5.7.8 http://support.google.com/mail/bin/answer.py?answer=14257 s11sm11680402qag.12 - gsmtp
+Request URL: /EmailSender/messages/envia/6
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Network\Email\SmtpTransport.php(199): SmtpTransport->_smtpSend('bmNjMTcwMQ==', '235')
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Network\Email\SmtpTransport.php(96): SmtpTransport->_auth()
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Network\Email\CakeEmail.php(1130): SmtpTransport->send(Object(CakeEmail))
+#3 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(26): CakeEmail->send('Tomara que funf...')
+#4 [internal function]: MessagesController->envia('6')
+#5 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#6 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#8 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-07-19 12:48:29 Error: [MissingActionException] Action PedidosController::exibir() could not be found.
+Exception Attributes: array (
+  'controller' => 'PedidosController',
+  'action' => 'exibir',
+)
+Request URL: /EmailSender/pedidos/exibir
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PedidosController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-19 12:48:45 Error: [MissingActionException] Action PedidosController::exibe() could not be found.
+Exception Attributes: array (
+  'controller' => 'PedidosController',
+  'action' => 'exibe',
+)
+Request URL: /EmailSender/pedidos/exibe
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PedidosController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-21 15:10:55 Error: [MissingActionException] Action PedidosController::exibe() could not be found.
+Exception Attributes: array (
+  'controller' => 'PedidosController',
+  'action' => 'exibe',
+)
+Request URL: /EmailSender/pedidos/exibe
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PedidosController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-21 15:11:00 Error: [MissingActionException] Action PedidosController::exibir() could not be found.
+Exception Attributes: array (
+  'controller' => 'PedidosController',
+  'action' => 'exibir',
+)
+Request URL: /EmailSender/pedidos/exibir
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PedidosController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-21 15:16:25 Error: [MissingActionException] Action MessagesController::enviatudo() could not be found.
+Exception Attributes: array (
+  'controller' => 'MessagesController',
+  'action' => 'enviatudo',
+)
+Request URL: /EmailSender/messages/enviatudo/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-21 15:30:22 Error: Fatal Error (1): Call to a member function lista() on a non-object in [C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php, line 13]
+2014-07-21 15:30:22 Error: [FatalErrorException] Call to a member function lista() on a non-object
+Request URL: /EmailSender/messages/envia/1
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\VertrigoServ...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\VertrigoServ...', 13, Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\VertrigoServ...', 13, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-21 15:31:06 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lista' at line 1
+Request URL: /EmailSender/messages/envia/1
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('lista', Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('lista', Array, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('lista', Array, Array)
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Model\Model.php(800): DboSource->query('lista', Array, Object(Pessoa))
+#5 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(13): Model->__call('lista', Array)
+#6 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(13): Pessoa->lista('1')
+#7 [internal function]: MessagesController->envia('1')
+#8 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#9 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#11 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-07-21 15:31:11 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lista' at line 1
+Request URL: /EmailSender/messages/envia/1
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('lista', Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('lista', Array, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('lista', Array, Array)
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Model\Model.php(800): DboSource->query('lista', Array, Object(Pessoa))
+#5 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(13): Model->__call('lista', Array)
+#6 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(13): Pessoa->lista('1')
+#7 [internal function]: MessagesController->envia('1')
+#8 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#9 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#11 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-07-21 15:36:10 Error: [MissingActionException] Action PessoasController::lists() could not be found.
+Exception Attributes: array (
+  'controller' => 'PessoasController',
+  'action' => 'lists',
+)
+Request URL: /EmailSender/messages/envia/1
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PessoasController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#3 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(15): Object->requestAction('/pessoas/lists/...')
+#4 [internal function]: MessagesController->envia('1')
+#5 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#6 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#8 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-07-21 15:43:56 Error: [SocketException] File not found: "C:\VertrigoServ\www\EmailSender\app\webroot\files\teste00000000002.pdf"
+Request URL: /EmailSender/messages/envia/2
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(38): CakeEmail->attachments(Array)
+#1 [internal function]: MessagesController->envia('2')
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#5 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-21 15:45:19 Error: [SocketException] File not found: "C:\VertrigoServ\www\EmailSender\app\webroot\files\teste00000000041.pdf"
+Request URL: /EmailSender/messages/envia/5
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(38): CakeEmail->attachments(Array)
+#1 [internal function]: MessagesController->envia('5')
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#5 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-21 15:45:33 Error: Fatal Error (4): syntax error, unexpected T_STRING in [C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php, line 33]
+2014-07-21 15:45:33 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /EmailSender/messages/envia/4
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\VertrigoServ...', 33)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\VertrigoServ...', 33, Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\VertrigoServ...', 33, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-21 15:48:39 Error: [SocketException] File not found: "C:\VertrigoServ\www\EmailSender\app\webroot\files'00000000005.pdf"
+Request URL: /EmailSender/messages/envia/4
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(38): CakeEmail->attachments(Array)
+#1 [internal function]: MessagesController->envia('4')
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#5 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-21 15:51:12 Error: [SocketException] File not found: "C:\VertrigoServ\www\EmailSenderapp\webroot\files\00000000041.pdf"
+Request URL: /EmailSender/messages/envia/5
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(38): CakeEmail->attachments(Array)
+#1 [internal function]: MessagesController->envia('5')
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#5 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-21 15:51:21 Error: [SocketException] File not found: "C:\VertrigoServ\www\EmailSenderapp\webroot\files\00000000007.pdf"
+Request URL: /EmailSender/messages/envia/6
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(38): CakeEmail->attachments(Array)
+#1 [internal function]: MessagesController->envia('6')
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#5 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-21 15:54:09 Error: [SocketException] File not found: "C:\VertrigoServ\www\EmailSenderapp\webroot\files\00000000041.pdf"
+Request URL: /EmailSender/messages/envia/5
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(38): CakeEmail->attachments(Array)
+#1 [internal function]: MessagesController->envia('5')
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#5 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-21 16:04:36 Error: [MissingActionException] Action PessoasController::lista() could not be found.
+Exception Attributes: array (
+  'controller' => 'PessoasController',
+  'action' => 'lista',
+)
+Request URL: /EmailSender/messages/envia/1
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PessoasController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#3 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(15): Object->requestAction('/pessoas/lista/...')
+#4 [internal function]: MessagesController->envia('1')
+#5 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#6 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#8 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-07-21 16:05:11 Error: [MissingActionException] Action PessoasController::lista() could not be found.
+Exception Attributes: array (
+  'controller' => 'PessoasController',
+  'action' => 'lista',
+)
+Request URL: /EmailSender/messages/envia/1
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PessoasController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#3 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(15): Object->requestAction('/pessoas/lista/...')
+#4 [internal function]: MessagesController->envia('1')
+#5 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#6 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#8 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-07-21 16:13:07 Error: [SocketException] File not found: "C:\VertrigoServ\www\EmailSender\app\webroot\files\.pdf"
+Request URL: /EmailSender/messages/envia/4
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(39): CakeEmail->attachments(Array)
+#1 [internal function]: MessagesController->envia('4')
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#5 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-21 16:13:17 Error: [SocketException] File not found: "C:\VertrigoServ\www\EmailSender\app\webroot\files\.pdf"
+Request URL: /EmailSender/messages/envia/4
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(39): CakeEmail->attachments(Array)
+#1 [internal function]: MessagesController->envia('4')
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#5 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-21 16:20:46 Error: [MissingViewException] View file "C:\VertrigoServ\www\EmailSender\app\View\Messages\enviatudo.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\VertrigoServ\\www\\EmailSender\\app\\View\\Messages\\enviatudo.ctp',
+)
+Request URL: /EmailSender/messages/enviatudo/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-07-21 16:21:16 Error: [SocketException] File not found: "C:\VertrigoServ\www\EmailSender\app\webroot\files\.pdf"
+Request URL: /EmailSender/messages/envia/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(39): CakeEmail->attachments(Array)
+#1 [internal function]: MessagesController->envia()
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#5 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-21 16:32:38 Error: [MissingViewException] View file "C:\VertrigoServ\www\EmailSender\app\View\Messages\enviatudo.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\VertrigoServ\\www\\EmailSender\\app\\View\\Messages\\enviatudo.ctp',
+)
+Request URL: /EmailSender/messages/enviatudo/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-07-21 16:34:48 Error: [SocketException] File not found: "C:\VertrigoServ\www\EmailSender\app\webroot\files\.pdf"
+Request URL: /EmailSender/messages/envia/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(48): CakeEmail->attachments(Array)
+#1 [internal function]: MessagesController->envia()
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#5 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-21 16:36:30 Error: [SocketException] File not found: "C:\VertrigoServ\www\EmailSender\app\webroot\files\.pdf"
+Request URL: /EmailSender/messages/envia/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(48): CakeEmail->attachments(Array)
+#1 [internal function]: MessagesController->envia()
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#5 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-21 16:36:33 Error: [SocketException] File not found: "C:\VertrigoServ\www\EmailSender\app\webroot\files\.pdf"
+Request URL: /EmailSender/messages/envia/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(48): CakeEmail->attachments(Array)
+#1 [internal function]: MessagesController->envia()
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#5 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-21 16:40:30 Error: [MissingActionException] Action PessoasController::lista() could not be found.
+Exception Attributes: array (
+  'controller' => 'PessoasController',
+  'action' => 'lista',
+)
+Request URL: /EmailSender/messages/envia/1
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PessoasController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#3 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(15): Object->requestAction('/pessoas/lista/...')
+#4 [internal function]: MessagesController->envia('1')
+#5 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#6 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#8 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-07-21 16:41:00 Error: [SocketException] File not found: "C:\VertrigoServ\www\EmailSender\app\webroot\img\teste.pdf"
+Request URL: /EmailSender/messages/envia/1
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(38): CakeEmail->attachments(Array)
+#1 [internal function]: MessagesController->envia('1')
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#5 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-21 16:42:02 Error: [SocketException] File not found: "C:\VertrigoServ\www\EmailSender\app\webroot\img\teste.pdf"
+Request URL: /EmailSender/messages/envia/1
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(38): CakeEmail->attachments(Array)
+#1 [internal function]: MessagesController->envia('1')
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#5 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-22 14:58:40 Error: [MissingActionException] Action PedidosController::exibe() could not be found.
+Exception Attributes: array (
+  'controller' => 'PedidosController',
+  'action' => 'exibe',
+)
+Request URL: /EmailSender/pedidos/exibe
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PedidosController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-22 15:04:54 Error: [SocketException] File not found: "C:\VertrigoServ\www\EmailSender\app\webroot\files\.pdf"
+Request URL: /EmailSender/messages/envia
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(39): CakeEmail->attachments(Array)
+#1 [internal function]: MessagesController->envia()
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#5 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-22 15:06:47 Error: [MissingActionException] Action PedidosController::exibe() could not be found.
+Exception Attributes: array (
+  'controller' => 'PedidosController',
+  'action' => 'exibe',
+)
+Request URL: /EmailSender/pedidos/exibe
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PedidosController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-22 15:06:51 Error: [MissingActionException] Action PedidosController::exibir() could not be found.
+Exception Attributes: array (
+  'controller' => 'PedidosController',
+  'action' => 'exibir',
+)
+Request URL: /EmailSender/pedidos/exibir
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PedidosController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-22 15:15:55 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\VertrigoServ\www\EmailSender\lib\Cake\Network\CakeSocket.php, line 301]
+2014-07-22 15:15:55 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /EmailSender/messages/enviatudo/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\VertrigoServ...', 301)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\VertrigoServ...', 301, Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\VertrigoServ...', 301, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-22 15:18:58 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php, line 74]
+2014-07-22 15:18:58 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /EmailSender/messages/enviatudo/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\VertrigoServ...', 74)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\VertrigoServ...', 74, Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\VertrigoServ...', 74, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-22 15:27:15 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php, line 74]
+2014-07-22 15:27:15 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /EmailSender/messages/enviatudo/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\VertrigoServ...', 74)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\VertrigoServ...', 74, Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\VertrigoServ...', 74, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-22 16:11:38 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\VertrigoServ\www\EmailSender\app\Controller\PessoasController.php, line 37]
+2014-07-22 16:11:38 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /EmailSender/messages/enviatudo/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\VertrigoServ...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\VertrigoServ...', 37, Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\VertrigoServ...', 37, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-22 16:14:12 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\VertrigoServ\www\EmailSender\app\Controller\PessoasController.php, line 37]
+2014-07-22 16:14:12 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /EmailSender/messages/enviatudo/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\VertrigoServ...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\VertrigoServ...', 37, Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\VertrigoServ...', 37, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-22 16:14:15 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\VertrigoServ\www\EmailSender\app\Controller\PessoasController.php, line 37]
+2014-07-22 16:14:15 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /EmailSender/messages/enviatudo/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\VertrigoServ...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\VertrigoServ...', 37, Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\VertrigoServ...', 37, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-22 16:14:29 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\VertrigoServ\www\EmailSender\app\Controller\PessoasController.php, line 37]
+2014-07-22 16:14:29 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /EmailSender/messages/enviatudo/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\VertrigoServ...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\VertrigoServ...', 37, Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\VertrigoServ...', 37, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-22 16:14:32 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\VertrigoServ\www\EmailSender\app\Controller\PessoasController.php, line 37]
+2014-07-22 16:14:32 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /EmailSender/messages/enviatudo/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\VertrigoServ...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\VertrigoServ...', 37, Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\VertrigoServ...', 37, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-23 16:12:23 Error: Fatal Error (4): syntax error, unexpected '|' in [C:\VertrigoServ\www\EmailSender\app\View\Pessoas\exibe.ctp, line 5]
+2014-07-23 16:12:23 Error: [FatalErrorException] syntax error, unexpected '|'
+Request URL: /EmailSender/Pessoas/exibe
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\VertrigoServ...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\VertrigoServ...', 5, Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\VertrigoServ...', 5, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-23 16:12:26 Error: Fatal Error (4): syntax error, unexpected '|' in [C:\VertrigoServ\www\EmailSender\app\View\Pessoas\exibe.ctp, line 5]
+2014-07-23 16:12:26 Error: [FatalErrorException] syntax error, unexpected '|'
+Request URL: /EmailSender/Pessoas/exibe
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\VertrigoServ...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\VertrigoServ...', 5, Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\VertrigoServ...', 5, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-23 16:14:26 Error: [SocketException] File not found: "C:\VertrigoServ\www\EmailSender\app\webroot\files\.pdf"
+Request URL: /EmailSender/messages/enviaaomesmotempo/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(178): CakeEmail->attachments(Array)
+#1 [internal function]: MessagesController->enviaaomesmotempo()
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#5 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-23 16:17:55 Error: [SocketException] Invalid email: "%s"
+Request URL: /EmailSender/messages/enviaaomesmotempo/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Network\Email\CakeEmail.php(569): CakeEmail->_validateEmail(NULL)
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Network\Email\CakeEmail.php(439): CakeEmail->_setEmail('_to', Array, NULL)
+#2 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(154): CakeEmail->to(Array)
+#3 [internal function]: MessagesController->enviaaomesmotempo()
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#5 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#7 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-07-23 16:19:31 Error: [SocketException] File not found: "C:\VertrigoServ\www\EmailSender\app\webroot\files\todos.pdf"
+Request URL: /EmailSender/messages/enviaaomesmotempo/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(167): CakeEmail->attachments(Array)
+#1 [internal function]: MessagesController->enviaaomesmotempo()
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#5 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-23 16:20:48 Error: [MissingViewException] View file "C:\VertrigoServ\www\EmailSender\app\View\Messages\enviaaomesmotempo.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\VertrigoServ\\www\\EmailSender\\app\\View\\Messages\\enviaaomesmotempo.ctp',
+)
+Request URL: /EmailSender/messages/enviaaomesmotempo/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-07-23 16:40:10 Error: Fatal Error (1): Call to undefined function soenvia() in [C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php, line 40]
+2014-07-23 16:40:10 Error: [FatalErrorException] Call to undefined function soenvia()
+Request URL: /EmailSender/messages/envia/1
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\VertrigoServ...', 40)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\VertrigoServ...', 40, Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\VertrigoServ...', 40, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-04 16:42:37 Error: [MissingActionException] Action MessagesController::enviatudorepartido() could not be found.
+Exception Attributes: array (
+  'controller' => 'MessagesController',
+  'action' => 'enviatudorepartido',
+)
+Request URL: /EmailSender/messages/enviatudorepartido/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-05 15:06:57 Error: [MissingControllerException] Controller class MensagemsController could not be found.
+Exception Attributes: array (
+  'class' => 'MensagemsController',
+  'plugin' => NULL,
+)
+Request URL: /EmailSender/mensagems/enviaaomesmotempo
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-05 15:07:02 Error: [MissingControllerException] Controller class MensagemsController could not be found.
+Exception Attributes: array (
+  'class' => 'MensagemsController',
+  'plugin' => NULL,
+)
+Request URL: /EmailSender/mensagems/enviaaomesmotempo
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-05 15:07:23 Error: [MissingControllerException] Controller class MensagemsController could not be found.
+Exception Attributes: array (
+  'class' => 'MensagemsController',
+  'plugin' => NULL,
+)
+Request URL: /EmailSender/mensagems/enviaaomesmotempo
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-05 15:08:11 Error: [MissingControllerException] Controller class MensagemsController could not be found.
+Exception Attributes: array (
+  'class' => 'MensagemsController',
+  'plugin' => NULL,
+)
+Request URL: /EmailSender/mensagems/enviaaomesmotempo
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-05 15:08:14 Error: [MissingControllerException] Controller class MensagemsController could not be found.
+Exception Attributes: array (
+  'class' => 'MensagemsController',
+  'plugin' => NULL,
+)
+Request URL: /EmailSender/mensagems/enviaaomesmotempo
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-05 15:28:05 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php, line 134]
+2014-08-05 15:28:05 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /EmailSender/messages/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\VertrigoServ...', 134)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\VertrigoServ...', 134, Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\VertrigoServ...', 134, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 15:28:20 Error: [MissingActionException] Action MessagesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'MessagesController',
+  'action' => 'index',
+)
+Request URL: /EmailSender/messages/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-05 15:52:55 Error: [MissingActionException] Action PedidosController::exibe() could not be found.
+Exception Attributes: array (
+  'controller' => 'PedidosController',
+  'action' => 'exibe',
+)
+Request URL: /EmailSender/pedidos/exibe
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PedidosController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-05 15:53:17 Error: [MissingActionException] Action PedidosController::exibe() could not be found.
+Exception Attributes: array (
+  'controller' => 'PedidosController',
+  'action' => 'exibe',
+)
+Request URL: /EmailSender/pedidos/exibe
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PedidosController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-05 16:06:37 Error: [MissingActionException] Action PedidosController::exibe() could not be found.
+Exception Attributes: array (
+  'controller' => 'PedidosController',
+  'action' => 'exibe',
+)
+Request URL: /EmailSender/pedidos/exibe
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PedidosController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-05 16:07:25 Error: [MissingActionException] Action PedidosController::exibe() could not be found.
+Exception Attributes: array (
+  'controller' => 'PedidosController',
+  'action' => 'exibe',
+)
+Request URL: /EmailSender/pedidos/exibe
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PedidosController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-05 16:08:40 Error: [MissingActionException] Action PedidosController::exibir() could not be found.
+Exception Attributes: array (
+  'controller' => 'PedidosController',
+  'action' => 'exibir',
+)
+Request URL: /EmailSender/pedidos/exibir
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PedidosController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-05 16:12:17 Error: [MissingActionException] Action PedidosController::exibe() could not be found.
+Exception Attributes: array (
+  'controller' => 'PedidosController',
+  'action' => 'exibe',
+)
+Request URL: /EmailSender/pedidos/exibe
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PedidosController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-05 16:23:45 Error: Fatal Error (4): syntax error, unexpected T_ECHO, expecting ',' or ';' in [C:\VertrigoServ\www\EmailSender\app\View\Messages\novo.ctp, line 19]
+2014-08-05 16:23:45 Error: [FatalErrorException] syntax error, unexpected T_ECHO, expecting ',' or ';'
+Request URL: /EmailSender/messages/novo
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\VertrigoServ...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\VertrigoServ...', 19, Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\VertrigoServ...', 19, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-07 16:24:06 Error: [MissingActionException] Action PedidosController::exibe() could not be found.
+Exception Attributes: array (
+  'controller' => 'PedidosController',
+  'action' => 'exibe',
+)
+Request URL: /EmailSender/pedidos/exibe
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PedidosController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

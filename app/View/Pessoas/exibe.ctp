@@ -1,6 +1,12 @@
 <?php
 
 //echo "its Alive !!!";
+echo "Enviar para ".$this->Html->link("TODOS",'/messages/enviatudo/').'(com delay automatico)';
+echo  '</br></br>';
+echo "Enviar para ".$this->Html->link("TODOS",'/messages/enviarepartido/').'(pausa manual)';
+echo  '</br></br>';
+echo "Enviar para ".$this->Html->link("TODOS",'/messages/enviaaomesmotempo/')." (Compor email em massa)";
+echo  '</br></br>';
 
 foreach($pessoas as $pessoa){
     echo "ID: ".$pessoa['Pessoa']['id']."</br>";

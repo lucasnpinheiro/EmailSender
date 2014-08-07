@@ -13,7 +13,8 @@ echo "</br>";
 echo $this->Html->link("Buscar Pessoas",'/pedidos/exibe');
 echo "</br>";
 echo "</br>";
-echo $this->Html->link("Exibir Pessoas",'/pedidos/exibir');
+echo $this->Html->link("Enviar email",'/messages/novo');
+echo "</br>"
 
 
 	                

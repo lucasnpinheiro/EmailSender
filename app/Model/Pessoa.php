@@ -13,6 +13,15 @@ class Pessoa extends AppModel{
         return $result;
     }
     
+    //retorna os dados de 1 pessoa a partir de seu id
+     public function buscapessoa($pessoaid){
+         
+        $result=$this->find('all',array('conditions'=>array('Pessoa.id'=>$pessoaid)));   
+        return $result;
+    }
+    
+    
+    
     //conta o número de pessoas cadastradsa
     public function conta(){
         $result=$this->find('count');        

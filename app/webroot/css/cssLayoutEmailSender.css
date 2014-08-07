@@ -8,6 +8,7 @@
       width: 800px;
       border: 1px solid gray;
       margin: 0 auto;
+      padding: 3px;
 
 
 }
@@ -27,9 +28,9 @@
     background: #FFF7D6;
     margin-bottom: 2px;    
     margin-top: 2px;    
-    margin-right: 110px;
+    margin-right: 70px;
     margin-left: 110px;
-    
+    width: 650px;
     padding: 3px;
     alignment-adjust: center;
     font-family:'lucida grande',verdana,helvetica,arial,sans-serif;

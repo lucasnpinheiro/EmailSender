@@ -32,9 +32,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                 <?php echo $this->element('menu'); ?>            
             </div>
             
-            <div id="rightnav" >
-              <?php //echo $this->element('listapedido'); ?>
-            </div>
+          
             
             <div id="main_body_container" >
                 <p>
