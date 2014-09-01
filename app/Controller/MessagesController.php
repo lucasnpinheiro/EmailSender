@@ -113,7 +113,8 @@ class MessagesController extends AppController{
         //se for to tipo get só exibe o formulario a preencher
        
         if ($this->request->is('post')){
-        
+            debug($this->data);
+            
             $formularioemail=$this->data;
             $assunto=$formularioemail['message']['assunto'];
             $corpoemail=$formularioemail['message']['corpo'];
@@ -136,7 +137,7 @@ class MessagesController extends AppController{
             $this->soenvia($enderecos,$assunto,$corpoemail,$caminhocompleto);
             
             
-            $this->redirect(array('controller' => 'pessoas', 'action' => 'index'));
+            //$this->redirect(array('controller' => 'pessoas', 'action' => 'index'));
             echo 'email enviado';
             
         }//FIM DO if que testa se é do tipo post               

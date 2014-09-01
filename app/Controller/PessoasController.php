@@ -45,6 +45,17 @@ class PessoasController extends AppController{
         return $this->Pessoa->conta();
     }
     
+    //retorna id e nome de todos os contatos
+    //terminar função
+    function idnome(){
+        $pessoas=$this->listaTudo();
+        $idnome=array();
+        
+        foreach($pessoas as $pessoa){
+            $idnome=$pessoa['pessoa']['id'];
+            
+        }
+    }
     
     
     

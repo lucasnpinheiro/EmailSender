@@ -2,6 +2,7 @@
 <?php
 
 //echo "its Alive !!!";
+/*
 echo  '</br></br>';
 echo "Enviar para ".$this->Html->link("TODOS",'/messages/enviatudo/').'(com delay automatico)';
 echo  '</br></br>';
@@ -9,19 +10,34 @@ echo "Enviar para ".$this->Html->link("TODOS",'/messages/enviarepartido/').'(pau
 echo  '</br></br>';
 echo "Enviar para ".$this->Html->link("TODOS",'/messages/enviaaomesmotempo/')." (Compor email em massa)";
 echo  '</br></br>';
-
+*/
 
 //FORMULARIO PARA ENVIO DE EMAIL
 
+$pessoas=$this->requestAction("/pessoas/listatudo/");
+
 echo $this->Form->create('message',array('action'=>'enviaaomesmotempo'));
-    echo $this->Form->input('destinatario');
+    
+    //opções de envio
+    //echo "Enviar para: </br>";
+    $opcoes = array('1' => 'Todos (pausa automatica)', '2' => 'Todos (pausa manual)', '3' => 'Individual');
+            echo $this->Form->input(
+            'Enviar para',
+            array('options' => $opcoes, 'default' => '3')
+        );    
+
+       
+    
+
+    echo $this->Form->input(
+            'Destinatario',
+            array('options' => $pessoas, 'default' => 'todos')
+        );    
+            
+    //echo $this->Form->input('destinatario', array('type' => 'file'));
     echo $this->Form->input('assunto');
     echo $this->Form->input('corpo', array('rows' => '3'));
-    $sizes = array('s' => 'Small', 'm' => 'Medium', 'l' => 'Large');
-            echo $this->Form->input(
-            'size',
-            array('options' => $sizes, 'default' => 'm')
-        );
+
     
     
     echo $this->Form->input('arquivo', array('type' => 'file'));

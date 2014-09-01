@@ -1,61 +1,20 @@
+/*Personaliza conteudo bootstrap*/
 
-*{
-    margin: 0;
-    padding: 0;
-}
+#conteudo-principal{
     
-#main_content_container{
-      width: 800px;
-      border: 1px solid gray;
-      margin: 0 auto;
-      padding: 3px;
-
-
-}
-
-
-#header{
-          text-align: center;
-}
-#header h1{
-    background:	#367889;
-    padding: 10px;
-    color: #FFF;
-       
-}
-
-#main_body_container{
-    background: #FFF7D6;
-    margin-bottom: 2px;    
-    margin-top: 2px;    
-    margin-right: 70px;
-    margin-left: 110px;
-    width: 650px;
-    padding: 3px;
-    alignment-adjust: center;
-    font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
-    min-height:500px;
-    position: relative;
-
-    
+    min-height:300px;
+    margin-bottom: 5px;
     
     
 }
 
-#leftnav{
-    width: 97px;
-    background: #dfdfdf;
-    padding: 3px;
-    float: left;
-    margin-top: 3px;
-    }
+#cabecalho{
+    background:linear-gradient(#8F83BF,#D4D1DF);
+  
+}
 
-#rightnav{
-    width: 97px;
-    background: #367889;
-    padding: 3px;
-    float: right;
-    margin-top: 3px;
+#menu-navegacao{
+/*    background:#555555*/
 }
 
 
@@ -67,23 +26,10 @@
     
 }
 
-#tipo_container{
-    float: left;
-    background: #FF4D4D;
-    margin:1px;
-    width: 49%;
-    height: 100px;
- }
+/*outros ajustes*/
 
- #produto_container{
-    float: left;
-    background: #FFCCCC;
-    margin:1px;
-    width: 49%;
-    height: 100px;
- }
- 
- //peguei emprestado do CSS padrão do cake
+
+/*peguei emprestado do CSS padrão do cake
  //preciso editar e retirar o que não usa
  
  /** Forms **/

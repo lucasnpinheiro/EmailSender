@@ -1,41 +1,14 @@
-<?php
-	
+<!--Novo menu baseado no bootstrap-->
 
-	
-?>
-
-
-<?php 
-
-echo $this->Html->link('Exibir Pessoas', array('controller' => 'Pessoas', 'action' => 'exibe'));
-echo "</br>";
-echo "</br>";
-echo $this->Html->link("Buscar Pessoas",'/pedidos/exibe');
-echo "</br>";
-echo "</br>";
-echo $this->Html->link("Enviar email",'/messages/novo');
-echo "</br>"
-
-
-	                
-             /*		        
-		foreach($tipos as $tipo){
-                      
-                    
-			//... codigo para correr todas as categorias e 
-			//montar uma linha com link para cada uma delas
-			
-			//echo $tipo['Tipo']['nome']; echo "</br>"; imprime o nome de todos os tipos
-                    
-                     //moneta um link com o nome e id de todas os tipos
-                        $nome=$tipo['Tipo']['nome'];
-                        $url='/pedidos/index/tipo_id:'.$tipo['Tipo']['id'];                         
-                        echo $this->Html->link($nome,$url);
-                        //echo $this->Html->link("Ver pedido",'/pedidos/view/');/
-                        echo "</br>";
-		
-		}//fim do foreach
-                
-              */  
-            
-    ?>
+<nav class="navbar navbar-default" role="navigation" id="menu-navegacao">
+    	
+    <div class="navbar-header">
+            <a class="navbar-brand" href="/EmailSender/">EmailSender</a>
+	</div>
+    
+        <ul class="nav navbar-nav">
+                    <li><?php echo $this->Html->link('Cadastros', array('controller' => 'Pessoas', 'action' => 'exibe'));?></li>
+                    <li><?php echo $this->Html->link("Buscar",'#');?></li>
+                    <li><?php echo $this->Html->link("Enviar Email",'/messages/novo');?></li>
+         </ul>
+</nav>
