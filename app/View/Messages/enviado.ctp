@@ -3,4 +3,4 @@
 //echo "its Alive !!!";
 
 
-echo "Mensagem enviada ";
+echo "view ENVIADO";

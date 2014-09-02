@@ -6346,3 +6346,232 @@ Stack Trace:
 #1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PedidosController), Object(CakeRequest))
 #2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-09-02 09:58:00 Error: [MissingActionException] Action MessagesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'MessagesController',
+  'action' => 'index',
+)
+Request URL: /EmailSender/messages/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-09-02 10:09:38 Error: [MissingViewException] View file "C:\VertrigoServ\www\EmailSender\app\View\Messages\picking.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\VertrigoServ\\www\\EmailSender\\app\\View\\Messages\\picking.ctp',
+)
+Request URL: /EmailSender/messages/picking
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-02 10:10:01 Error: [MissingViewException] View file "C:\VertrigoServ\www\EmailSender\app\View\Messages\picking.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\VertrigoServ\\www\\EmailSender\\app\\View\\Messages\\picking.ctp',
+)
+Request URL: /EmailSender/messages/picking
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-02 10:10:23 Error: [MissingViewException] View file "C:\VertrigoServ\www\EmailSender\app\View\Messages\picking.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\VertrigoServ\\www\\EmailSender\\app\\View\\Messages\\picking.ctp',
+)
+Request URL: /EmailSender/messages/picking
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-02 10:15:50 Error: [MissingViewException] View file "C:\VertrigoServ\www\EmailSender\app\View\Messages\Pessoas\exibe.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\VertrigoServ\\www\\EmailSender\\app\\View\\Messages\\Pessoas\\exibe.ctp',
+)
+Request URL: /EmailSender/messages/picking
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\View\View.php(468): View->_getViewFileName('Pessoas/exibe')
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(954): View->render('Pessoas/exibe', NULL)
+#2 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(171): Controller->render('Pessoas/exibe')
+#3 [internal function]: MessagesController->picking()
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#5 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#7 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-09-02 10:31:18 Error: [MissingViewException] View file "C:\VertrigoServ\www\EmailSender\app\View\EmailSender.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\VertrigoServ\\www\\EmailSender\\app\\View\\EmailSender.ctp',
+)
+Request URL: /EmailSender/messages/picking
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\View\View.php(468): View->_getViewFileName('/EmailSender')
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(954): View->render('/EmailSender', NULL)
+#2 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(178): Controller->render('/EmailSender')
+#3 [internal function]: MessagesController->picking()
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#5 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#7 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-09-02 10:32:27 Error: [MissingControllerException] Controller class EnviadoController could not be found.
+Exception Attributes: array (
+  'class' => 'EnviadoController',
+  'plugin' => NULL,
+)
+Request URL: /EmailSender/enviado
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-02 10:33:20 Error: [MissingActionException] Action MessagesController::enviado() could not be found.
+Exception Attributes: array (
+  'controller' => 'MessagesController',
+  'action' => 'enviado',
+)
+Request URL: /EmailSender/messages/enviado
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-09-02 10:36:28 Error: [MissingViewException] View file "C:\VertrigoServ\www\EmailSender\app\View\Messages\enviaautomatico.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\VertrigoServ\\www\\EmailSender\\app\\View\\Messages\\enviaautomatico.ctp',
+)
+Request URL: /EmailSender/messages/enviaautomatico/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#4 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-02 10:38:20 Error: [MissingActionException] Action MessagesController::enviarepartido() could not be found.
+Exception Attributes: array (
+  'controller' => 'MessagesController',
+  'action' => 'enviarepartido',
+)
+Request URL: /EmailSender/messages/enviarepartido/2
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-09-02 10:40:52 Error: [MissingViewException] View file "C:\VertrigoServ\www\EmailSender\app\View\Messages\enviadoautomatico.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\VertrigoServ\\www\\EmailSender\\app\\View\\Messages\\enviadoautomatico.ctp',
+)
+Request URL: /EmailSender/messages/picking
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\View\View.php(468): View->_getViewFileName('enviadoautomati...')
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(954): View->render('enviadoautomati...', NULL)
+#2 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(171): Controller->render('enviadoautomati...')
+#3 [internal function]: MessagesController->picking()
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#5 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#7 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-09-02 11:22:24 Error: Fatal Error (4): syntax error, unexpected T_ECHO, expecting ')' in [C:\VertrigoServ\www\EmailSender\app\View\Messages\novo.ctp, line 38]
+2014-09-02 11:22:24 Error: [FatalErrorException] syntax error, unexpected T_ECHO, expecting ')'
+Request URL: /EmailSender/messages/novo
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\VertrigoServ...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\VertrigoServ...', 38, Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\VertrigoServ...', 38, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-02 11:35:38 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\VertrigoServ\www\EmailSender\app\View\Messages\novo.ctp, line 59]
+2014-09-02 11:35:38 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /EmailSender/messages/novo
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\VertrigoServ...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\VertrigoServ...', 59, Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\VertrigoServ...', 59, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-02 11:59:03 Error: [SocketException] File not found: "C:\VertrigoServ\www\EmailSender\app\webroot\files\.pdf"
+Request URL: /EmailSender/messages/picking
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(23): CakeEmail->attachments(Array)
+#1 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(79): MessagesController->soenvia('joseronaldo@tes...', '', '', '\app\webroot\fi...')
+#2 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(214): MessagesController->enviaautomatico(Array)
+#3 [internal function]: MessagesController->picking()
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#5 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#7 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-09-02 12:06:45 Error: Fatal Error (4): syntax error, unexpected $end, expecting T_FUNCTION in [C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php, line 279]
+2014-09-02 12:06:45 Error: [FatalErrorException] syntax error, unexpected $end, expecting T_FUNCTION
+Request URL: /EmailSender/messages/novo
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\VertrigoServ...', 279)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\VertrigoServ...', 279, Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\VertrigoServ...', 279, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-02 12:06:49 Error: Fatal Error (4): syntax error, unexpected $end, expecting T_FUNCTION in [C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php, line 279]
+2014-09-02 12:06:49 Error: [FatalErrorException] syntax error, unexpected $end, expecting T_FUNCTION
+Request URL: /EmailSender/messages/novo
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\VertrigoServ...', 279)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\VertrigoServ...', 279, Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\VertrigoServ...', 279, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-02 12:37:41 Error: [SocketException] File not found: "C:\VertrigoServ\www\EmailSenderC:/VertrigoServ/www/EmailSender/app/webroot/files/00000000001.pdf"
+Request URL: /EmailSender/messages/picking
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(23): CakeEmail->attachments(Array)
+#1 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(97): MessagesController->soenvia('joseronaldo@tes...', '', '', 'C:/VertrigoServ...')
+#2 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(232): MessagesController->enviaautomatico(Array)
+#3 [internal function]: MessagesController->picking()
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#5 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#7 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-09-02 12:56:37 Error: Fatal Error (1): Call to undefined function testaArquivoExiste() in [C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php, line 95]
+2014-09-02 12:56:37 Error: [FatalErrorException] Call to undefined function testaArquivoExiste()
+Request URL: /EmailSender/messages/picking
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\VertrigoServ...', 95)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\VertrigoServ...', 95, Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\VertrigoServ...', 95, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-02 12:56:45 Error: Fatal Error (1): Call to undefined function testaArquivoExiste() in [C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php, line 95]
+2014-09-02 12:56:45 Error: [FatalErrorException] Call to undefined function testaArquivoExiste()
+Request URL: /EmailSender/messages/picking
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\VertrigoServ...', 95)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\VertrigoServ...', 95, Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\VertrigoServ...', 95, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-02 12:58:03 Error: Fatal Error (1): Call to undefined function testaArquivoExiste() in [C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php, line 95]
+2014-09-02 12:58:03 Error: [FatalErrorException] Call to undefined function testaArquivoExiste()
+Request URL: /EmailSender/messages/picking
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\VertrigoServ...', 95)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\VertrigoServ...', 95, Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\VertrigoServ...', 95, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

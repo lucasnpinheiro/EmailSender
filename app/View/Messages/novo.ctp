@@ -16,23 +16,39 @@ echo  '</br></br>';
 
 $pessoas=$this->requestAction("/pessoas/listatudo/");
 
-echo $this->Form->create('message',array('action'=>'enviaaomesmotempo'));
+echo $this->Form->create('message',array('action'=>'picking'));
     
-    //opções de envio
-    //echo "Enviar para: </br>";
-    $opcoes = array('1' => 'Todos (pausa automatica)', '2' => 'Todos (pausa manual)', '3' => 'Individual');
-            echo $this->Form->input(
-            'Enviar para',
-            array('options' => $opcoes, 'default' => '3')
+    //tipo de envio
+    //todos ou individual   
+    $tipoemails = array('1' => 'Todos (pausa automatica)', 
+                        '2' => 'Todos (pausa manual)', 
+                        '3' => 'Email Individual'
+                        );
+            
+    echo $this->Form->input('tipoemail',
+                array('options' => $tipoemails, 'default' => '1', 'label' => 'Tipo de Email')
         );    
 
-       
     
-
-    echo $this->Form->input(
-            'Destinatario',
-            array('options' => $pessoas, 'default' => 'todos')
-        );    
+   
+    //tipo de anexo 
+         
+   //personalizado ou mesmo para todos    
+    $tipoanexos = array('1' => 'Personalizado pelo CPF', 
+                        '2' => 'Escolher Agora'
+        );
+        
+           
+    echo $this->Form->input('tipoanexo',
+                array('options' => $tipoanexos, 'default' => '1', 'label' => 'Tipo de Anexo',)
+        );   
+    
+    
+    //usado quando não for enviar para todos        
+//    echo $this->Form->input(
+//            'destinatario',
+//            array('options' => $pessoas, 'default' => 'todos')
+//        );    
             
     //echo $this->Form->input('destinatario', array('type' => 'file'));
     echo $this->Form->input('assunto');
@@ -40,5 +56,5 @@ echo $this->Form->create('message',array('action'=>'enviaaomesmotempo'));
 
     
     
-    echo $this->Form->input('arquivo', array('type' => 'file'));
+    echo $this->Form->input('arquivo', array('type' => 'file','label' => 'Arquivo (opcional)'));
 echo $this->Form->end('Enviar email');

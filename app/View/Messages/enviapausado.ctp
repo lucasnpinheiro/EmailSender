@@ -3,7 +3,7 @@
 //echo "its Alive !!!";
 
 
-echo "foram enviados $tamanho emails, continuar ?".$this->Html->link("Sim",'/messages/enviarepartido/'.$inicio);
+echo "foram enviados $tamanho emails, continuar ?".$this->Html->link("Sim",'/messages/enviapausado/'.$inicio);
 echo "</br></br>";
 
 //debug($pessoas);
