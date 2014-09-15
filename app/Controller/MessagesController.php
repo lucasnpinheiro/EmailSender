@@ -28,6 +28,17 @@ class MessagesController extends AppController{
         
     }
 
+    //anexa um arquivo diferente a partir da opção escolhida no formulario
+    //se o anexo for do tipo 1 (personalizado), busca o anexo a partir do cpf
+            //se for do tipo 2(mesmo para todos), busca o anexo a partir do arquivo indicado no formulario
+    
+    function escolheanexo($tipoanexo=1){
+            //IMPLEMENTAR
+                    
+     
+        
+        
+    }
     //testado OK
    function soenvia($endereco=null,$assunto=null,$corpoemail=null,$anexo=null) {
           
@@ -64,7 +75,8 @@ class MessagesController extends AppController{
         $this->set('pessoas',$pessoa);
     }
     
-    //Enviar para TODOS cadastrados(com pequeno delay automatico)
+    //Enviar para TODOS cadastrados
+    //Com pequeno delay automatico para não sobrecarregar o servidor
     //funfando 01/09/14 as 12:08
     function enviaautomatico($dadosemail){
        
@@ -117,34 +129,65 @@ class MessagesController extends AppController{
     //Enviar para TODOS cadastrados com pausa manual
     //é possivel escolher quantos emails serão enviados por vez
     //alterar a variavel divisor para isso
-    function enviapausado($inicio=0){
-     
+    function enviapausado($dadosemail=null,$inicio=0,$iniciado=false){
         $divisor=2; //tamanho da lista a ser dividida
-        $pessoas=$this->requestAction("/pessoas/listarepartido/$inicio/$divisor");
+        debug($this->data);
+        $dadosemail=$this->data;
         
-              
-        $Email = new CakeEmail('smtp');
+        //verifica se existe a index 'iniciado' dentro da array
+        //se existir, pega o valor do novo inicio
+        if (array_key_exists("iniciado", $dadosemail['message'])){
+            if($dadosemail['message']['iniciado']==true){
+                echo "ja foi iniciado</br>";                    
+                $inicio=$dadosemail['message']['novoinicio'];
+            }        
+        }
+           
+        $assunto=$dadosemail['message']['assunto'];
+        $corpo=$dadosemail['message']['corpo'];
+        $tipoanexo=$dadosemail['message']['tipoanexo'];
+                   
+        
+       
+        //pega uma parte da lista de pessoas cadastradas
+        $pessoas=$this->requestAction("/pessoas/listarepartido/$inicio/$divisor");
+  
         
         foreach($pessoas as $pessoa){
-                  
+         
             $endereco=$pessoa['Contato']['emailprincipal'];
-            $assunto='Informes de '.$pessoa['Pessoa']['nome'];
-            $corpoemail='Enviando pdf *-* ';
             
-            $anexo=$pessoa['Pessoa']['cpf'].'.pdf';
-            $caminhocompleto='\app\webroot\files\\'.$anexo;
+            //se o anexo for do tipo 1 (personalizado), busca o anexo a partir do cpf
+            //se for do tipo 2(mesmo para todos), busca o anexo a partir do arquivo indicado no formulario
+       
+            if($tipoanexo=='1'){//anexo personalizdo pelo cpf
+                $arquivo=$pessoa['Pessoa']['cpf'].'.pdf';         
+  
+            }
+            else if($tipoanexo=='2'){//anexo enviado pelo formulario
+                $arquivo=$dadosemail['message']['arquivo'];
+  
+            }       
+            
+            //testa existencia do arquivo antes de enviar por email            
+            if($this->testaArquivoExiste($arquivo)){
+                $caminhocompleto='\app\webroot\files\\'.$arquivo; //se existir, coloca caminho correto
+            }
+            else{
+               $anexocompleto=null;
+            }
+            
                        
-            $this->soenvia($endereco,$assunto,$corpoemail,$caminhocompleto);
+            $this->soenvia($endereco,$assunto,$corpo,$caminhocompleto);
            
-            sleep(3);
-            
+            sleep(3);           
         }
         
         $inicio+=2; 
         $tamanho=sizeof($pessoas); //tamanho da array enviada
         
-        $this->set(compact('pessoas','inicio','tamanho'));
-        
+        $this->set(compact('pessoas','inicio','tamanho','dadosemail'));
+         
         
     }
     
@@ -197,7 +240,7 @@ class MessagesController extends AppController{
     
     function picking(){
          $this->autoRender = false ;
-         debug($this->data);
+//         debug($this->data);
         
         if ($this->request->is('post')){
             
@@ -214,12 +257,12 @@ class MessagesController extends AppController{
                 
                 
                 case '2':
-                    $this->enviapausado();
+                    $this->enviapausado($formularioemail,0,false);
                     $this->render('enviapausado');   
                     break;
                 
                 case '3':     
-                    $this->enviaindividual();
+                    $this->enviaindividual($formularioemail);
                     $this->render('enviaindividual');                        
                     break;
                 

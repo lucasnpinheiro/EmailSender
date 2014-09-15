@@ -6575,3 +6575,108 @@ Stack Trace:
 #3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-09-02 13:21:34 Error: [MissingActionException] Action MessagesController::envia() could not be found.
+Exception Attributes: array (
+  'controller' => 'MessagesController',
+  'action' => 'envia',
+)
+Request URL: /EmailSender/messages/envia/1
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-09-02 14:11:32 Error: [SocketException] File not found: "C:\VertrigoServ\www\EmailSender\app\webroot\files\.pdf"
+Request URL: /EmailSender/messages/picking
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(42): CakeEmail->attachments(Array)
+#1 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(61): MessagesController->soenvia('jctsiqueira@gma...', 'Informes de ', 'Enviando pdf *-...', '\app\webroot\fi...')
+#2 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(222): MessagesController->enviaindividual()
+#3 [internal function]: MessagesController->picking()
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#5 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#7 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-09-02 14:11:39 Error: [SocketException] File not found: "C:\VertrigoServ\www\EmailSender\app\webroot\files\.pdf"
+Request URL: /EmailSender/messages/picking
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(42): CakeEmail->attachments(Array)
+#1 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(61): MessagesController->soenvia('jctsiqueira@gma...', 'Informes de ', 'Enviando pdf *-...', '\app\webroot\fi...')
+#2 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(222): MessagesController->enviaindividual()
+#3 [internal function]: MessagesController->picking()
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#5 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#7 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-09-02 14:11:52 Error: [SocketException] File not found: "C:\VertrigoServ\www\EmailSender\app\webroot\files\.pdf"
+Request URL: /EmailSender/messages/picking
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(42): CakeEmail->attachments(Array)
+#1 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(61): MessagesController->soenvia('jctsiqueira@gma...', 'Informes de ', 'Enviando pdf *-...', '\app\webroot\fi...')
+#2 C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php(222): MessagesController->enviaindividual()
+#3 [internal function]: MessagesController->picking()
+#4 C:\VertrigoServ\www\EmailSender\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MessagesController), Array)
+#5 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#7 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-09-15 10:36:15 Error: Fatal Error (1): Cannot use string offset as an array in [C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php, line 139]
+2014-09-15 10:36:15 Error: [FatalErrorException] Cannot use string offset as an array
+Request URL: /EmailSender/messages/enviapausado/2
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use stri...', 'C:\VertrigoServ...', 139)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', 'C:\VertrigoServ...', 139, Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', 'C:\VertrigoServ...', 139, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-15 10:39:43 Error: Fatal Error (1): Cannot use string offset as an array in [C:\VertrigoServ\www\EmailSender\app\Controller\MessagesController.php, line 139]
+2014-09-15 10:39:43 Error: [FatalErrorException] Cannot use string offset as an array
+Request URL: /EmailSender/messages/enviapausado/2/Array
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use stri...', 'C:\VertrigoServ...', 139)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', 'C:\VertrigoServ...', 139, Array)
+#2 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', 'C:\VertrigoServ...', 139, Array)
+#3 C:\VertrigoServ\www\EmailSender\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-15 11:37:20 Error: [MissingControllerException] Controller class EnviapausadosController could not be found.
+Exception Attributes: array (
+  'class' => 'EnviapausadosController',
+  'plugin' => NULL,
+)
+Request URL: /EmailSender/enviapausados/enviapausado
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-15 11:37:49 Error: [MissingControllerException] Controller class EnviapausadosController could not be found.
+Exception Attributes: array (
+  'class' => 'EnviapausadosController',
+  'plugin' => NULL,
+)
+Request URL: /EmailSender/enviapausados/enviapausado
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-15 11:38:00 Error: [MissingControllerException] Controller class EnviapausadosController could not be found.
+Exception Attributes: array (
+  'class' => 'EnviapausadosController',
+  'plugin' => NULL,
+)
+Request URL: /EmailSender/enviapausados/enviapausado
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-15 11:39:08 Error: [MissingActionException] Action MessagesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'MessagesController',
+  'action' => 'index',
+)
+Request URL: /EmailSender/messages/
+Stack Trace:
+#0 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\VertrigoServ\www\EmailSender\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MessagesController), Object(CakeRequest))
+#2 C:\VertrigoServ\www\EmailSender\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

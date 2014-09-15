@@ -1,2 +1,2 @@
-1409674431
+1410796478
 a:4:{s:2:"id";a:6:{s:4:"type";s:7:"integer";s:4:"null";b:0;s:7:"default";N;s:6:"length";i:10;s:8:"unsigned";b:1;s:3:"key";s:7:"primary";}s:9:"pessoa_id";a:6:{s:4:"type";s:7:"integer";s:4:"null";b:0;s:7:"default";N;s:6:"length";i:10;s:8:"unsigned";b:1;s:3:"key";s:5:"index";}s:14:"emailprincipal";a:6:{s:4:"type";s:6:"string";s:4:"null";b:0;s:7:"default";N;s:6:"length";i:60;s:7:"collate";s:16:"latin1_danish_ci";s:7:"charset";s:6:"latin1";}s:15:"emailsecundario";a:6:{s:4:"type";s:6:"string";s:4:"null";b:1;s:7:"default";N;s:6:"length";i:60;s:7:"collate";s:16:"latin1_danish_ci";s:7:"charset";s:6:"latin1";}}

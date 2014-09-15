@@ -2,8 +2,30 @@
 
 //echo "its Alive !!!";
 
+$tipoemail=$dadosemail['message']['tipoemail'];
+$tipoanexo=$dadosemail['message']['tipoanexo'];
+$assunto=$dadosemail['message']['assunto'];
+$corpo=$dadosemail['message']['corpo'];
+$arquivo=$dadosemail['message']['arquivo'];
 
-echo "foram enviados $tamanho emails, continuar ?".$this->Html->link("Sim",'/messages/enviapausado/'.$inicio);
+$iniciado=true;
+$novoinicio=$inicio;
+        
+
+echo $this->Form->create('message',array('action'=>'enviapausado'));
+    echo $this->Form->input('tipoemail',array('type'=>'hidden','value'=>"$tipoemail"));
+    echo $this->Form->input('tipoanexo',array('type'=>'hidden','value'=>"$tipoanexo"));
+    echo $this->Form->input('assunto',array('type'=>'hidden','value'=>"$assunto"));
+    echo $this->Form->input('corpo',array('type'=>'hidden','value'=>"$corpo"));
+    echo $this->Form->input('arquivo',array('type'=>'hidden','value'=>"$arquivo"));    
+    
+    echo $this->Form->input('iniciado',array('type'=>'hidden','value'=>"$iniciado"));
+    echo $this->Form->input('novoinicio',array('type'=>'hidden','value'=>"$novoinicio"));
+echo $this->Form->end('Continuar enviando');
+
+
+
+
 echo "</br></br>";
 
 //debug($pessoas);

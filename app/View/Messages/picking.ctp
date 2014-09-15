@@ -1,8 +1,10 @@
 <?php
     
 
+echo "tipo de email foi $tipoemail</br>";
 
     if($tipoemail==1){
+        
         echo "Emails enviados para todos de maneira automatica ! Confira sua caixa de saida";
 
     }
